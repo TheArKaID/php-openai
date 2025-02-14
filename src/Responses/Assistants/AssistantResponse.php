@@ -38,7 +38,7 @@ final class AssistantResponse implements ResponseContract, ResponseHasMetaInform
         public ?string $instructions,
         public array $tools,
         public ?AssistantResponseToolResources $toolResources,
-        public array $metadata,
+        public ?array $metadata,
         public ?float $temperature,
         public ?float $topP,
         public string|AssistantResponseResponseFormat $responseFormat,

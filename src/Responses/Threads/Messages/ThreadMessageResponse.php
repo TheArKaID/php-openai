@@ -39,7 +39,7 @@ final class ThreadMessageResponse implements ResponseContract, ResponseHasMetaIn
         public ?string $assistantId,
         public ?string $runId,
         public array $attachments,
-        public array $metadata,
+        public ?array $metadata,
         private readonly MetaInformation $meta,
     ) {}
 

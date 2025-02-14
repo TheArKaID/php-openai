@@ -33,7 +33,7 @@ final class ThreadResponse implements ResponseContract, ResponseHasMetaInformati
         public string $object,
         public int $createdAt,
         public ?AssistantResponseToolResources $toolResources,
-        public array $metadata,
+        public ?array $metadata,
         private readonly MetaInformation $meta,
     ) {}
 

@@ -42,7 +42,7 @@ final class ThreadRunStepResponse implements ResponseContract
         public ?int $cancelledAt,
         public ?int $failedAt,
         public ?int $completedAt,
-        public array $metadata,
+        public ?array $metadata,
         private readonly MetaInformation $meta,
         public ?ThreadRunStepResponseUsage $usage
     ) {}
