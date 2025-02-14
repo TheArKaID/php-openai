@@ -47,7 +47,7 @@ final class VectorStoreFileResponse implements ResponseContract, ResponseHasMeta
             $attributes['id'],
             $attributes['object'],
             $attributes['usage_bytes'],
-            $attributes['created_at'],
+            (int)$attributes['created_at'],
             $attributes['vector_store_id'],
             $attributes['status'],
             isset($attributes['last_error']) ? VectorStoreFileResponseLastError::from($attributes['last_error']) : null,

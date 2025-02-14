@@ -74,7 +74,7 @@ final class RetrieveResponse implements ResponseContract, ResponseHasMetaInforma
             $attributes['id'],
             $attributes['object'],
             $attributes['model'],
-            $attributes['created_at'],
+            (int)$attributes['created_at'],
             $events,
             $attributes['fine_tuned_model'],
             RetrieveResponseHyperparams::from($attributes['hyperparams']),

@@ -68,7 +68,7 @@ final class AssistantResponse implements ResponseContract, ResponseHasMetaInform
         return new self(
             $attributes['id'],
             $attributes['object'],
-            $attributes['created_at'],
+            (int)$attributes['created_at'],
             $attributes['name'],
             $attributes['description'],
             $attributes['model'],

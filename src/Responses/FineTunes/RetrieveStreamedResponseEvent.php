@@ -36,7 +36,7 @@ final class RetrieveStreamedResponseEvent implements ResponseContract
     {
         return new self(
             $attributes['object'],
-            $attributes['created_at'],
+            (int)$attributes['created_at'],
             $attributes['level'],
             $attributes['message'],
         );

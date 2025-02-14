@@ -56,7 +56,7 @@ final class RetrieveJobResponse implements ResponseContract, ResponseHasMetaInfo
             $attributes['id'],
             $attributes['object'],
             $attributes['model'],
-            $attributes['created_at'],
+            (int)$attributes['created_at'],
             $attributes['finished_at'],
             $attributes['fine_tuned_model'],
             RetrieveJobResponseHyperparameters::from($attributes['hyperparameters']),

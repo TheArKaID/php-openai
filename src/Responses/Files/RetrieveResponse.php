@@ -50,7 +50,7 @@ final class RetrieveResponse implements ResponseContract, ResponseHasMetaInforma
             $attributes['id'],
             $attributes['object'],
             $attributes['bytes'],
-            $attributes['created_at'],
+            (int)$attributes['created_at'],
             $attributes['filename'],
             $attributes['purpose'],
             $attributes['status'],

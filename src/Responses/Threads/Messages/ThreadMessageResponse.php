@@ -67,7 +67,7 @@ final class ThreadMessageResponse implements ResponseContract, ResponseHasMetaIn
         return new self(
             $attributes['id'],
             $attributes['object'],
-            $attributes['created_at'],
+            (int)$attributes['created_at'],
             $attributes['thread_id'],
             $attributes['role'],
             $content,

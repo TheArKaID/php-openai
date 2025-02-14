@@ -47,7 +47,7 @@ final class ThreadResponse implements ResponseContract, ResponseHasMetaInformati
         return new self(
             $attributes['id'],
             $attributes['object'],
-            $attributes['created_at'],
+            (int)$attributes['created_at'],
             isset($attributes['tool_resources']) ? AssistantResponseToolResources::from($attributes['tool_resources']) : null,
             $attributes['metadata'],
             $meta,

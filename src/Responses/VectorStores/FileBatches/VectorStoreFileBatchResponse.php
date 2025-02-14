@@ -45,7 +45,7 @@ final class VectorStoreFileBatchResponse implements ResponseContract, ResponseHa
         return new self(
             $attributes['id'],
             $attributes['object'],
-            $attributes['created_at'],
+            (int)$attributes['created_at'],
             $attributes['vector_store_id'],
             $attributes['status'],
             VectorStoreResponseFileCounts::from($attributes['file_counts']),
